@@ -3,36 +3,45 @@
 
 **IMPORTANT:** Make sure to remove or move your current dot files and/or directory.
 
+## Install
+1. Take a backup
+  ```sh
+  mkdir ~/backup_dotfiles
+  mv ~/.gitignore ~/backup_dotfiles/.gitignore
+  mv ~/.gitignore_global ~/backup_dotfiles/.gitignore_global
+  mv ~/.bashrc ~/backup_dotfiles/.bashrc
+  mv ~/.bash_aliases ~/backup_dotfiles/.bash_aliases
+  mv ~/.zshrc ~/backup_dotfiles/.zshrc
+  mv ~/.pre-commit-config.yaml ~/backup_dotfiles/.pre-commit-config.yaml
+  mv ~/.flake8 ~/backup_dotfiles/.flake8
+  ```
+  
+2. Install Dot Files
+ ```sh
+ cd ~
+ git init
+ git remote add origin https://github.com/ismail-h-rana/dot-files.git
+ git pull origin master
+ source ~./bashrc
+ ```
+ If you use **zsh:** `exec zsh`
 
-
-
-## How To Use (Full Configurations):
-1. [Install NeoVim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
-2. Setup [NvChad](https://nvchad.github.io) 
-3. Take a backup
-4. Run Following Terminal Commands: 
- 
-**Please take a backup following files/directory:**
-
-- [ ] ~/.gitignore
-- [ ] ~/.gitignore_global
-- [ ] ~/.bashrc
-- [ ] ~/.bash_aliases
-- [ ] ~/.zshrc
-- [ ] ~/.config/nvim/lua/custom
-- [ ] ~/.pre-commit-config.yaml
-- [ ] ~/.flake8
-
-
-**Terminal Commands**
+## Uninstall & Restore Previous Setup
 
 ```sh
 cd ~
-git init 
-git remote add origin https://github.com/ismail-h-rana/dotfiles.git 
-git pull origin master 
-nvim +PackerSync
+rm -rf .gitignore .gitignore_global .bashrc .bash_aliases .zshrc .pre-commit-config.yaml .flake8
+mv ~/backup_dotfiles/.gitignore ~/.gitignore
+mv ~/backup_dotfiles/.gitignore_global ~/.gitignore_global
+mv ~/backup_dotfiles/.bashrc ~/.bashrc
+mv ~/backup_dotfiles/.bash_aliases ~/.bash_aliases
+mv ~/backup_dotfiles/.zshrc ~/.zshrc
+mv ~/backup_dotfiles/.pre-commit-config.yaml ~/.pre-commit-config.yaml
+mv ~/backup_dotfiles/.flake8 ~/.flake8
+source ~/.bashrc
 ```
+If you use **zsh**: `exec zsh`
+
 
 ## License
 
