@@ -1,12 +1,30 @@
-# Dot Files
-My Custom Dot Files
+# Try Out My Dot Files
+
+
+**IMPORTANT:** Make sure to remove or move your current dot files and/or directory.
+
+
+
 
 ## How To Use (Full Configurations):
-- [ ] [Install NeoVim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
+1. [Install NeoVim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
+2. Setup [NvChad](https://nvchad.github.io) 
+3. Take a backup
+4. Run Following Terminal Commands: 
+ 
+**Please take a backup following files/directory:**
 
-- [ ] Setup [NvChad](https://nvchad.github.io) 
+- [ ] ~/.gitignore
+- [ ] ~/.gitignore_global
+- [ ] ~/.bashrc
+- [ ] ~/.bash_aliases
+- [ ] ~/.zshrc
+- [ ] ~/.config/nvim/lua/custom
+- [ ] ~/.pre-commit-config.yaml
+- [ ] ~/.flake8
 
-- [ ] Run Following Terminal Commands: 
+
+**Terminal Commands**
 
 ```sh
 cd ~
