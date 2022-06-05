@@ -30,7 +30,7 @@
 
 ```sh
 cd ~
-rm -rf .gitignore .gitignore_global .bashrc .bash_aliases .zshrc .pre-commit-config.yaml .flake8
+rm -rf .git .gitignore .gitignore_global .bashrc .bash_aliases .zshrc .pre-commit-config.yaml .flake8
 mv ~/backup_dotfiles/.gitignore ~/.gitignore
 mv ~/backup_dotfiles/.gitignore_global ~/.gitignore_global
 mv ~/backup_dotfiles/.bashrc ~/.bashrc
