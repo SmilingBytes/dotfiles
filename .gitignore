@@ -1,6 +1,8 @@
 *
-!.gitconfig
+!.gitconfig_home
+!.gitconfig_office 
 !.gitignore
+!.gitignore_global
 !.bashrc
 !.zshrc
 !.config/nvim/lua/custom

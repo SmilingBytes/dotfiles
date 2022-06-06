@@ -1,0 +1,51 @@
+[core]
+	editor = nvim
+	excludesfile = /home/smile/.gitignore_global
+[hub]
+	protocol = https
+[github]
+	user = rana-ergo
+[color]
+	ui = true
+
+[user]
+	name = Ismail H Rana
+	email = rana@mirinfosys.com 
+	signingkey = C46EC5F411A6002E
+
+[commit]
+    gpgsign = true
+
+[diff]
+	tool = nvim 
+[difftool]
+    prompt = false
+[difftool "nvim"]
+    cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
+
+[merge]
+    conflictstyle = diff3
+	tool = nvim 
+[mergetool]
+    prompt = false
+[mergetool "nvim"]
+    cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
+
+[color "diff-highlight"]
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+	oldNormal = red bold
+[color "diff"]
+	meta = 11 bold
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+
+[credential "https://github.com"]
+	helper = !gh auth git-credential
+
+[init]
+	defaultBranch = main
