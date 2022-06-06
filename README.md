@@ -22,7 +22,7 @@
  git init
  git remote add origin https://github.com/ismail-h-rana/dotfiles.git
  git pull origin main
- source ~./bashrc
+ source ~/.bashrc
  ```
  If you use **zsh:** `exec zsh`
 
