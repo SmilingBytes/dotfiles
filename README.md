@@ -20,8 +20,8 @@
  ```sh
  cd ~
  git init
- git remote add origin https://github.com/ismail-h-rana/dot-files.git
- git pull origin master
+ git remote add origin https://github.com/ismail-h-rana/dotfiles.git
+ git pull origin main
  source ~./bashrc
  ```
  If you use **zsh:** `exec zsh`
